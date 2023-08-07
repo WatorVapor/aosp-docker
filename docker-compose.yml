@@ -9,5 +9,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - ./config/gitconfig:/root/.gitconfig:ro
-      - ~/aosp:/aosp:rw
-      - ~/ccache:/ccache:rw
+      - /opt/aosp-build/aosp:/aosp:rw
+      - /opt/aosp-build/ccache:/ccache:rw
+      - /opt/aosp-home/ccache:/home/aosp:rw
