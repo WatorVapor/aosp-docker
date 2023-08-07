@@ -11,5 +11,5 @@ services:
       - ./config/gitconfig:/root/.gitconfig:ro
       - /opt/aosp-build/aosp:/aosp:rw
       - /opt/aosp-build/ccache:/ccache:rw
-      - /opt/aosp-home:/home/aosp/:rw
+      - /opt/aosp-build/aosp-home:/home/aosp/:rw
       - ./:/script/:rw
