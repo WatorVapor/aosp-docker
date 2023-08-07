@@ -29,13 +29,13 @@ WORKDIR /aosp
 USER aosp
 
 #aliases
-RUN echo "alias lstat=\"stat -L\"" >> ~/.bashrc
+#RUN echo "alias lstat=\"stat -L\"" >> ~/.bashrc
 
 #enable ccache
-RUN echo "export USE_CCACHE=1" >> ~/.bashrc \
-&& echo "export CCACHE_EXEC=/usr/bin/ccache" >> ~/.bashrc \
-&& echo "export CCACHE_DIR=/ccache" >> ~/.bashrc \
-&& echo "ccache -M 50G > /dev/null" >> ~/.bashrc
+#RUN echo "export USE_CCACHE=1" >> ~/.bashrc \
+#&& echo "export CCACHE_EXEC=/usr/bin/ccache" >> ~/.bashrc \
+#&& echo "export CCACHE_DIR=/ccache" >> ~/.bashrc \
+#&& echo "ccache -M 50G > /dev/null" >> ~/.bashrc
 
 # we want to run that container forever until we shut it down manually
 # TODO find a better way
