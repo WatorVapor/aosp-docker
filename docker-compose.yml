@@ -12,3 +12,4 @@ services:
       - /opt/aosp-build/aosp:/aosp:rw
       - /opt/aosp-build/ccache:/ccache:rw
       - /opt/aosp-home/ccache:/home/aosp:rw
+      - ./:/script/:rw
